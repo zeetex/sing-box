@@ -77,6 +77,7 @@ func OutboundRegistry() *outbound.Registry {
 
 	registerQUICOutbounds(registry)
 	registerWireGuardOutbound(registry)
+	registerTailscaleOutbound(registry)
 	registerStubForRemovedOutbounds(registry)
 
 	return registry
